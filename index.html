@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <div class="topnav" id="myTopnav"> <!--Navigation-bar-->
+      <a href="#" class="active">Home</a>
+      <a href="#">Payment</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="header-text">
+      <h2>Online Application for Master of Business Administration Program</h2>
+      <p>For academic year 2024-2025</p>
+      <hr style="background-color: #F7B801; height: 2px; border: none;">
+    </div>
+    <h3 class="container-header">PERSONAL DETAILS</h4>
+    <section class="ip-container">
+      <div class="left-container">
+        <input type="text" class="ip-field" id="" name="" placeholder="Name * (as per ssc marks statement)" required>
+        <input type="text" class="ip-field" id="" name="" placeholder="Father's name" required>
+        <input type="text" class="ip-field" id="" name="" placeholder="Occupation * " required>
+        <input type="text" class="ip-field" id="" name="" placeholder="Mother's name" required>
+        <input type="text" class="ip-field" id="" name="" placeholder="Occupation * " required>
+      </div>
+      <div class="right-container">
+        <div class="hr-ip-fields">
+          <input type="date" class="ip-field" placeholder="Date of birth *" required>
+          <input type="text" class="ip-field" placeholder="Age (in years)" required>
+        </div>
+        
+        <p>Gender :</p>
+        <input type="radio" name="category" id="">Male <br>
+        <input type="radio" name="category" id="">Female <br>
+        <input type="radio" name="category" id="">Other <br>
+        <select class="ip-field" name="" id="">
+          <option value="" selected>Category</option>
+          <option value="">General</option>
+          <option value="">SC/ST</option>
+          <option value="">OBC</option>
+        </select>
+        <input type="text" class="ip-field" placeholder="Nationality * " required>
+      </div>
+    </section>
+
+    <h3 class="container-header">CONTACT DETAILS</h4>
+    <section class="contact-details ip-container">
+      <div class="left-container">
+        <textarea name="" id="" cols="40" rows="10" class="ip-field" placeholder="Communication Address *"></textarea>
+        <div class="hr-ip-fields">
+          <input type="text" class="ip-field" placeholder="Pincode *" required>
+          <input type="text" class="ip-field" placeholder="State * " required>
+        </div>
+        <br>
+        <p>Candidates Contact details *</p>
+        <input type="text" class="ip-field" placeholder="Mobile number *" required>
+        <input type="text" class="ip-field" placeholder="Whatsapp number" required>
+        <input type="email" class="ip-field" placeholder="Email" required>
+      </div>
+      <div class="right-container">
+        <textarea name="" id="" cols="40" rows="10" class="ip-field" placeholder="Permanent Address *"></textarea>
+        <div class="hr-ip-fields">
+          <input type="date" class="ip-field" placeholder="Pincode *" required>
+          <input type="text" class="ip-field" placeholder="State * ">
+        </div>
+
+        <br>
+        <p>Parents/Guardians Contact details *</p>
+        <input type="text" class="ip-field" placeholder="Mobile number *" required>
+        <input type="text" class="ip-field" placeholder="Whatsapp number" required>
+      </div>
+    </section>
+    <h3 class="container-header">EDUCATIONAL QUALIFICATION DETAILS</h4>
+      <section class="educational-qualification-details ip-container">
+        <div class="external-container">
+          <div class="sub-container">
+            <select name="" id="" class="ip-field">
+            <option value="option1" selected>Degree</option>
+            <option value="option2">Option 1</option>
+            <option value="option3">Option 2</option>
+            <option value="option4">Option 3</option>
+          </select>
+          <input type="text" name="" id="" class="ip-field" placeholder="Name of the Program/Specification">
+          <input type="text" name="" id="" class="ip-field" placeholder="Name of the Institute">
+          <input type="text" name="" id="" class="ip-field" placeholder="Month & Year of Passing">
+          <input type="text" name="" id="" class="ip-field" placeholder="Aggregate % / CGPA / AW *">
+        </div>
+        <hr>
+        <div class="sub-container">
+          <select name="" id="" class="ip-field">
+            <option value="option1" selected>Degree</option>
+            <option value="option2">Option 1</option>
+            <option value="option3">Option 2</option>
+            <option value="option4">Option 3</option>
+          </select>
+          <input type="text" name="" id="" class="ip-field" placeholder="Name of the Program/Specification">
+          <input type="text" name="" id="" class="ip-field" placeholder="Name of the Institute">
+          <input type="text" name="" id="" class="ip-field" placeholder="Month & Year of Passing">
+          <input type="text" name="" id="" class="ip-field" placeholder="Aggregate % / CGPA / AW *">
+        </div>
+        <div class="button-container">
+          <button type="button" class="add-button">Add +</button>
+        </div>
+      </div>
+    </section>
+    
+    <h3 class="container-header">WORK EXPERIENCE (If any)</h4>
+      <section class="work-experience-details ip-container">
+        <div class="external-container">
+        <div class="sub-container">
+          <input type="text" name="" id="" class="ip-field" placeholder="Work experience (if any)">
+          <input type="text" name="" id="" class="ip-field" placeholder="Employment title">
+          <p>From </p><input type="date" name="" id="" class="ip-field">
+          <p>To </p><input type="date" name="" id="" class="ip-field">
+          <input type="number" name="" id="" class="ip-field" placeholder="Duration">
+        </div>
+        <hr>
+        <div class="button-container">
+          <button type="button" class="add-button">Add +</button>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="container-header">MANAGEMENT STUDIES ENTERENCE EXAM DETAILS</h4>
+      <section class="mgnt-studies-exam-details ip-container">
+        <div class="external-container">
+        <div class="sub-container">
+          <input type="text" name="" id="" class="ip-field" placeholder="Examination name">
+          <p>Exam date </p>
+          <input type="date" name="" id="" class="ip-field">
+          <input type="text" name="" id="" class="ip-field" placeholder="Maximum score">
+          <input type="text" name="" id="" class="ip-field" placeholder="Score obtained">
+        </div>
+        <hr>
+        <div class="button-container">
+          <button type="button" class="add-button">Add +</button>
+        </div>
+      </div>
+    </section>
+    
+    <h3 class="container-header">HEALTH ISSUES (If any)</h4>
+    <section class="contact-details ip-container">
+      <div class="left-container">
+        <textarea name="" id="" cols="40" rows="10" class="ip-field" placeholder="Health issues"></textarea>
+        <input type="number" class="ip-field" placeholder="Contact person (in case of emergency)" required>
+      </div>
+      <div class="right-container">
+        <input type="text" class="ip-field" placeholder="Relationship *" required>
+        <input type="text" class="ip-field" placeholder="Mobile number" required>
+      </div>
+    </section>
+    <section class="enclosure-details ip-container">
+      <div class="left-container">
+        <label for=""><h4>Marks Statement</h4></label>
+        
+      </div>
+      <div class="right-container">
+        
+      </div>
+      
+
+    </section>
+
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
