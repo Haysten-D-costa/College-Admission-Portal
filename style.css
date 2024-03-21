@@ -34,7 +34,7 @@ body {
 }
 .container-header {
   color: #390099;
-  margin: 2rem 5rem 0.5rem;
+  margin: 5rem 5rem 0.5rem;
 }
 .ip-container {
   border: 1px solid #F7B801;
@@ -63,9 +63,15 @@ body {
   width: 100%;
   height: 30px;
 }
+.ip-field:active {
+  border: 1px solid #F7B801;
+}
 ::placeholder {
   color: #390099;
   padding-left: 1rem;
+}
+:focus{
+  border-color: #F7B801;
 }
 .hr-ip-fields {
   width: 100%;
@@ -84,6 +90,7 @@ body {
   justify-content: center;
   width: 100%;
   gap: 1rem;
+  margin-top: 1rem;
 }
 .educational-qualification-details {
   overflow: hidden;
@@ -97,21 +104,45 @@ body {
   padding: 0.5rem;
 }
 .external-container {
+  position: relative;
   height: auto;
   width: 100%;
 }
 .button-container {
-  bottom: 20px;
-  left: 33px;
-  width: 100%;
+  position: absolute;
   margin-top: 2rem;
+  top: -3.2rem;
+  right: 0;
+}
+.cross-button {
+  color: white;
+  background-color: #390099;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+
 }
 .sub-container p {
   margin: 0;
   padding: 0;
 }
-
-
+.sub-contianer-1 {
+  margin: 5rem;
+}
+.file-upload {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  background-color: #3D348B;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.file-input {
+  display: none;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -143,6 +174,18 @@ body {
   .right-container,
   .left-container {
     width: 90%;
+  }
+  .external-container {
+    padding-top: 2rem;
+  }
+  .button-container {
+    position: absolute;
+    margin-top: 2rem;
+    top: -2.5rem;
+    right: 0;
+  }
+  .cross-button {
+    margin-left: 16.5rem;
   }
 }
 @media screen and (max-width: 600px) {
