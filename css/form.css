@@ -145,6 +145,7 @@ body {
 }
 
 
+
 @media screen and (max-width: 1000px) {
   .ip-container .external-container .sub-container {
     flex-direction: column;
