@@ -3,9 +3,20 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../css/form.css">
   </head>
   <body>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="../img/logo.png" class="logo" height="100px" alt="aitd-logo">
+      </div>
+      <div class="content">
+        <p>Society of the Missionaries of St. Francis Xavier, Pilar, Goa, Agnel Region</p>
+        <h1>AGNEL INSTITUTE OF TECHNOLOGY AND DESIGN </h1>
+        <p>(An Engineering Institute Managed by Agnel Charities, Approved by AICTE & Affliated to Goa University)</p>
+        <p>Accredited by National Assessment and Acreditation Council (NAAC)</p>
+      </div>
+    </div>
     <div class="topnav" id="myTopnav"> <!--Navigation-bar-->
       <a href="#" class="active">Home</a>
       <a href="#">Payment</a>
@@ -14,7 +25,7 @@
       </a>
     </div>
     <div class="header-text">
-      <h2>Online Application for Master of Business Administration Program</h2>
+      <h2>Application for Master of Business Administration Program</h2>
       <p>For academic year 2024-2025</p>
       <hr style="background-color: #F7B801; height: 2px; border: none;">
     </div>
@@ -33,10 +44,12 @@
           <input type="date" class="ip-field" name="dob" placeholder="Date of birth *" required>
           <input type="text" class="ip-field" name="age" placeholder="Age (in years)" required>
         </div>
-        <p>Gender :</p>
-        <input type="radio" name="gender" id="">Male <br>
-        <input type="radio" name="gender" id="">Female <br>
-        <input type="radio" name="gender" id="">Other <br>
+        <br>
+        <h4>Gender :</h4>
+        <input type="radio" name="gender" id="">Male
+        <input type="radio" name="gender" id="">Female
+        <input type="radio" name="gender" id="">Other
+        <br>
         <select class="ip-field" name="category" id="">
           <option value="" selected>Category</option>
           <option value="">General</option>
@@ -158,8 +171,8 @@
           <label for="">
             <h4>Type of the upload document : </h4>
           </label>
-          <input type="checkbox">Aadhaar char *
-          <input type="checkbox">Pan card
+          <br><input type="checkbox">Aadhaar char *
+          <br><input type="checkbox">Pan card
         </div>
       </div>
       <div class="right-container">
@@ -181,10 +194,10 @@
           <label for="">
             <h4>Type of the upload document : </h4>
           </label>
-          <input type="checkbox">UG
-          <input type="checkbox">PG
-          <input type="checkbox">Other
-          <input type="checkbox">Transfer Certificate
+          <br><input type="checkbox">UG
+          <br><input type="checkbox">PG
+          <br><input type="checkbox">Other
+          <br><input type="checkbox">Transfer Certificate
         </div>
       </div>
     </section>
@@ -194,6 +207,6 @@
     <!--JS Scripts section-->
 
 
-    <script src="/script.js"></script>
+    <script src="../js/form.js"></script>
   </body>
 </html>

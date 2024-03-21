@@ -4,6 +4,25 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  color: white;
+  background-color: #390099;
+  padding: 1rem;
+}
+.content h1, p {
+  padding: 1px;
+  margin: 0;
+}
+.content p {
+  font-size: 12px;
+}
+.logo {
+  height: 8rem;
+}
 .topnav {
   overflow: hidden;
   background-color: white;
@@ -90,7 +109,6 @@ body {
   justify-content: center;
   width: 100%;
   gap: 1rem;
-  margin-top: 1rem;
 }
 .educational-qualification-details {
   overflow: hidden;
@@ -159,6 +177,9 @@ body {
   .sub-container {
     width: 90%;
   }
+  .logo-container {
+    flex-direction:column-reverse;
+  }
 }
 @media screen and (max-width: 800px) {
   .header-text {
@@ -205,5 +226,14 @@ body {
     float: none;
     display: block;
     text-align: left;
+  }
+  .logo {
+    height: 10rem;
+  }
+  .content p {
+    font-size: 9px;
+  }
+  .content h1 {
+    font-size: 15px;
   }
 }
