@@ -59,13 +59,13 @@ p {
   border-radius: 0.3rem;
   padding: 1rem 5rem;
   background-color: #F7B801;
+  cursor: pointer;
+  text-decoration: none;
+  color: #390099;
 }
 
 
 @media screen and (max-width: 1000px) {
-  .logo-container {
-    flex-direction: column-reverse;
-  }
   .responsive-img {
     width: 740px;
   }
@@ -86,6 +86,23 @@ p {
   }
 }
 @media screen and (max-width: 600px) {
+  .logo-container {
+    padding: 0 1rem;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .logo img {
+    height: 70px;
+    max-height: 100px;
+    width: auto;
+  }
+  .content {
+    padding: 0 1rem;
+  }
   .logo {
     height: 10rem;
   }
@@ -100,6 +117,9 @@ p {
   }
   .responsive-img {
     width: 440px;
+  }
+  .proceed-button {
+    padding: 1rem 2rem;
   }
 }
 @media screen and (max-width: 500px) {

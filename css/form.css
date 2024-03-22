@@ -178,9 +178,6 @@ body {
   .sub-container {
     width: 90%;
   }
-  .logo-container {
-    flex-direction:column-reverse;
-  }
 }
 @media screen and (max-width: 800px) {
   .header-text {
@@ -236,5 +233,23 @@ body {
   }
   .content h1 {
     font-size: 15px;
+  }
+  .logo-container {
+    margin: 1rem 0;
+    padding: 0 1rem 1rem;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .logo img {
+    height: 70px;
+    max-height: 100px;
+    width: auto;
+  }
+  .content {
+    padding: 0 1rem;
   }
 }
