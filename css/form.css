@@ -9,9 +9,10 @@ body {
   align-items: center;
   justify-content: start;
   gap: 1rem;
-  color: white;
-  background-color: #390099;
+  color: black;
+  background-color: white;
   padding: 1rem;
+  border-bottom: 1px solid black;
 }
 .content h1, p {
   padding: 1px;
