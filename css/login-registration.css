@@ -28,7 +28,6 @@ body {
 .main-outer-container {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     gap: 1rem;
     height: auto;
 }
@@ -116,10 +115,10 @@ body {
     }
     .main-outer-container {
         flex-direction: column;
+        padding: 2rem;
     }
-    .image-container img {
-        border-top-left-radius: 3rem;
-        border-bottom-right-radius: 3rem;
+    .image-container {
+        /* margin: 5rem; */
     }
     .ip-container {
         margin-bottom: 4rem;
