@@ -121,6 +121,7 @@ body {
   border: none;
   border-radius: 3px;
   padding: 0.5rem;
+  cursor: pointer;
 }
 .external-container {
   position: relative;
@@ -139,7 +140,7 @@ body {
   border: none;
   padding: 5px;
   border-radius: 2px;
-
+  cursor: pointer;
 }
 .sub-container p {
   margin: 0;

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/css/login-registration.css">
+    <script src="../js/login.js"></script>
     <title>MBA | Login Page</title>
 </head>
-<body>
+<body id="login-page">
   <div class="logo-container">
     <div class="logo">
       <img src="../img/logo.png" class="logo" height="auto" alt="aitd-logo">
@@ -25,21 +26,43 @@
     </div>
     <div class="content-container">
       <div class="form-container">
-        <div class="toggle-buttons">
-          <a href="/html/registration.html" id="registerButton">Register</a>
-          <a href="#" id="loginButton">Login</a>
-        </div>
-        <div class="ip-container">
-          <input type="text" id="" class="ip-field" name="" placeholder="Email address" required>
-          <input type="text" id="" class="ip-field" name="" placeholder="Password" required>
-        </div>
-        <button type="button" class="ip-field button">LOGIN</button>
-        <a href="#" class="forgot-pass">Forgot Password ?</a>
+        <form method="POST" action="../php/login.php"> 
+          <div class="toggle-buttons">
+            <a href="/html/registration.html" id="registerButton">Register</a>
+            <a href="#" id="loginButton">Login</a>
+          </div>
+          <div class="ip-container">
+            <input type="text" id="Email" class="ip-field" name="Email" placeholder="Email address" required>
+            <div class="hr-ip-fields">    
+              <input type="password" id="passwordField" class="ip-field" name="Password" placeholder="Set Password* " required>
+              <i id="togglePasswordVisibility" class="eye-icon">
+                  <img src="../img/eye_on.svg" alt="Eye Icon" style="width: 20px; height: 20px;">
+              </i>
+            </div> 
+            <script>
+                // Get the password field and the toggle icon
+                const passwordField = document.getElementById('passwordField');
+                const toggleIcon = document.getElementById('togglePasswordVisibility');
+        
+                // Add an event listener to the toggle icon
+                toggleIcon.addEventListener('click', function () {
+                    // Toggle the visibility of the password field
+                    if (passwordField.type === 'password') {
+                        passwordField.type = 'text';
+                        toggleIcon.innerHTML = '<img src="../img/mdi_eye-off.svg" alt="Eye Off Icon" style="width: 20px; height: 20px;">';
+                    } else {
+                        passwordField.type = 'password';
+                        toggleIcon.innerHTML = '<img src="../img/eye_on.svg" alt="Eye Icon" style="width: 20px; height: 20px;">';
+                    }
+                });
+            </script>   
+          </div>
+          <button type="submit" class="ip-field button">LOGIN</button>
+          <a href="#" class="forgot-pass">Forgot Password ?</a>
+        </form>
       </div>
     </div>
   </div>
-
-
   <script>
     document.getElementById("loginButton").classList.add("active");
   </script>  

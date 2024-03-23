@@ -28,6 +28,7 @@ body {
 .main-outer-container {
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
     gap: 1rem;
     height: auto;
 }
@@ -92,6 +93,7 @@ body {
     background-color: #F7B801;
     text-decoration: none;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 .no-code {
     width: 3rem;
@@ -104,6 +106,23 @@ body {
     color: white;
     background-color: #f77001;
 }
+.captchaText{
+    width: 164.44px; 
+    height: 40.17px;  
+    text-align:center ; 
+    background: #ec0a0a ;
+    display: flex;            
+    justify-content: center; 
+    align-items: center;
+    cursor:default;
+}
+.eye-icon{  
+    position: relative;
+    top: 15px;
+    transform: translateY(-50%); 
+    cursor: pointer;
+}
+
 
 
 
@@ -116,9 +135,6 @@ body {
     .main-outer-container {
         flex-direction: column;
         padding: 2rem;
-    }
-    .image-container {
-        /* margin: 5rem; */
     }
     .ip-container {
         margin-bottom: 4rem;

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/css/login-registration.css">
+    <link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login-registration.css">
+    <script src="../js/registration.js"></script>
+
     <title>MBA | Registration Page</title>
+    
 </head>
 <body class="registration-page">
-
     <div class="logo-container">
         <div class="logo">
           <img src="../img/logo.png" class="logo" height="100px" alt="aitd-logo">
@@ -26,43 +28,65 @@
         </div>
         <div class="content-container">
             <div class="form-container">
-                <div class="toggle-buttons">
-                    <a href="#" id="registerButton">Register</a>
-                    <a href="/html/login.html" id="loginButton">Login</a>
-                </div>
-                <div class="ip-container">
-                    <input type="text" id="" class="ip-field" name="" placeholder="Candidate name * " required>
-                    <input type="text" id="" class="ip-field" name="" placeholder="Email address * " required>
-                    <div class="hr-ip-fields">
-                        <input type="text" class="ip-field no-code" name="dob" placeholder="+91" required>
-                        <input type="number" class="ip-field" name="age" placeholder="Mobile number *" required>
+                <form id="yourFormId" method="POST" action="../php/registration.php">
+                    <div class="toggle-buttons">
+                        <a href="#" id="registerButton">Register</a>
+                        <a href="/html/login.html" id="loginButton">Login</a>
                     </div>
-                    <div class="hr-ip-fields">
-                        <select name="" id="" class="ip-field">
-                            <option value="option1">State *</option>
-                            <option value="option1">State 1</option>
-                            <option value="option1">State 2</option>
-                            <option value="option1">State 3</option>
-                            <option value="option1">State 4</option>
-                        </select>
-                        <input type="text" class="ip-field" name="age" placeholder="City * " required>
+                    <div class="ip-container">
+                        <input type="text" id="candidateName" class="ip-field" name="candidateName" placeholder="Candidate name * " required>
+                        <input type="text" id="Email" class="ip-field" name="Email" placeholder="Email address * " required>
+                        <div class="hr-ip-fields">    
+                            <input type="password" id="passwordField" class="ip-field" name="Password" placeholder="Set Password* " required>
+                            <i id="togglePasswordVisibility" class="eye-icon">
+                                <img src="../img/eye_on.svg" alt="Eye Icon" style="width: 20px; height: 20px;">
+                            </i>
+                        </div> 
+                        <script>
+                            // Get the password field and the toggle icon
+                            const passwordField = document.getElementById('passwordField');
+                            const toggleIcon = document.getElementById('togglePasswordVisibility');
+                    
+                            // Add an event listener to the toggle icon
+                            toggleIcon.addEventListener('click', function () {
+                                // Toggle the visibility of the password field
+                                if (passwordField.type === 'password') {
+                                    passwordField.type = 'text';
+                                    toggleIcon.innerHTML = '<img src="../img/mdi_eye-off.svg" alt="Eye Off Icon" style="width: 20px; height: 20px;">';
+                                } else {
+                                    passwordField.type = 'password';
+                                    toggleIcon.innerHTML = '<img src="../img/eye_on.svg" alt="Eye Icon" style="width: 20px; height: 20px;">';
+                                }
+                            });
+                        </script>   
+                        <div class="hr-ip-fields">
+                            <input type="text" class="ip-field no-code" name="c_code" placeholder="+91" required>
+                            <input type="number" class="ip-field" name="mobile" placeholder="Mobile number *" required>
+                        </div>
+                        <div class="hr-ip-fields">
+                            <select name="state" id="state" class="ip-field">
+                                <option value="option1">State *</option>
+                                <option value="option1">State 1</option>
+                                <option value="option1">State 2</option>
+                                <option value="option1">State 3</option>
+                                <option value="option1">State 4</option>
+                            </select>
+                            <input type="text" class="ip-field" name="city" placeholder="City * " required>
+                        </div>
+                        <div class="hr-ip-fields">
+                            <div id="captchaText" class="captchaText" onmousedown="return false" onselectstart="return false">
+                            </div>
+                            <input type="text" class="ip-field" name="captcha" placeholder="Enter the text / capcha" required>
+                        </div>
+                        <br>
+                        <input type="checkbox" id="checkbox"> I accept
                     </div>
-                    <div class="hr-ip-fields">
-                        CAPCHA CODE
-                        <input type="text" class="ip-field" name="age" placeholder="Enter the text / capcha" required>
-                    </div>
-                    <br>
-                    <input type="checkbox"> I accept
-                </div>
-                <button type="button" class="ip-field button">REGISTER</button>
+                    <button type="submit" id="registerButton" class="ip-field button">REGISTER</button>
+                </form>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
+
     <script>
         document.getElementById("registerButton").classList.add("active");
     </script>
