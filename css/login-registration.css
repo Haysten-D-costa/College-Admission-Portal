@@ -120,6 +120,7 @@ body {
 }
 .eye-icon{  
     position: relative;
+    width: 2rem;
     top: 15px;
     transform: translateY(-50%); 
     cursor: pointer;
