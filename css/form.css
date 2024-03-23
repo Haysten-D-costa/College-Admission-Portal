@@ -82,13 +82,13 @@ body {
   margin-top: 1rem;
   width: 100%;
   height: 30px;
+  padding-left: 1rem;
 }
 .ip-field:active {
   border: 1px solid #F7B801;
 }
 ::placeholder {
   color: #390099;
-  padding-left: 1rem;
 }
 :focus{
   border-color: #F7B801;
