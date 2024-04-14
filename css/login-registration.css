@@ -125,6 +125,27 @@ body {
     transform: translateY(-50%); 
     cursor: pointer;
 }
+.proceed-container {
+    margin: 3rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .proceed-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem auto;
+    background-color: #F7B801;
+    cursor: pointer;
+    text-decoration: none;
+    color: #390099;
+  }
 
 
 
